@@ -41,6 +41,6 @@ public class ApplicationConfi {
 
     @Bean
     public ExternalServicePort externalServicePort() {
-        return new ExternalServiceAdapter()
+        return new ExternalServiceAdapter();
     }
 }

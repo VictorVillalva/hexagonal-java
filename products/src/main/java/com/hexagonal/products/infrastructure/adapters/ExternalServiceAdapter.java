@@ -10,8 +10,8 @@ public class ExternalServiceAdapter implements ExternalServicePort {
 
     private final RestTemplate restTemplate;
 
-    public ExternalServiceAdapter(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public ExternalServiceAdapter() {
+        restTemplate = new RestTemplate();
     }
 
     @Override

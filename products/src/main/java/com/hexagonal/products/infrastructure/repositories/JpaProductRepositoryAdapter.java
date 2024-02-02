@@ -4,10 +4,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Component;
+
 import com.hexagonal.products.domain.models.Product;
 import com.hexagonal.products.domain.ports.out.ProductRepositoryPort;
 import com.hexagonal.products.infrastructure.entities.ProductEntity;
 
+@Component
 public class JpaProductRepositoryAdapter implements ProductRepositoryPort {
     private final JpaProductRepository jpaProductRepository;
 
